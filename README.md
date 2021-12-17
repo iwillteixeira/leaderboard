@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# WebPack Template
-
+# Leaderboard Project
 
 
 ## Built With
