@@ -8,12 +8,6 @@ li {
   list-style: none;
 }
 
-html,
-body,
-main {
-  height: 90%;
-}
-
 body {
   background-color: #f6f6f6;
 }
@@ -22,8 +16,4 @@ header {
   padding: 20px;
   display: flex;
   flex-direction: column;
-}
-
-section {
-  height: 100%;
 }

@@ -10,61 +10,40 @@
     
 <script defer src="bundle.js"></script></head>
 <body>
-    <header>
+    <header class="d-flex">
         <h1 class="text-dark">Leaderboard</h1>
     </header>
-    <main>
+    <main class="d-flex justify-content-center align-items-center">
        <section class="wrap-app d-flex justify-content-center align-items-center">
-           <div class="wrapper d-flex gap-5">
-               <div class="scores col-7">
+           <div class="wrapper d-flex flex-column-reverse flex-lg-row gap-5 justify-content-center">
+               <div class="scores col-sm-12 col-lg-8">
                 <div class="refresh d-flex justify-content-between">
                     <h2 class="recent-title">Recent scores</h2>
-                    <button class="refresh-btn btn btn-outline-secondary">Refresh</button>
+                    <button type="button" class="refresh-btn btn btn-outline-secondary">Refresh</button>
                 </div>
                 <div class="list">
                     <table class="table table-striped">
-                        <thead>
+                      
+                        <tbody class="list-score">
                             <tr>
-                                <th>Name</th>
-                                <th>Score</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td scope="row">Name</td>
+                                <td>Name</td>
                                 <td>123</td>
-                                
                             </tr>
-                            <tr>
-                                <td scope="row">Name</td>
-                                <td>20</td>
-                              
-                            </tr>
-                            <tr>
-                                <td scope="row">Name</td>
-                                <td>44</td>
-                              
-                            </tr>
-                            <tr>
-                                <td scope="row">Name</td>
-                                <td>30</td>
-                              
-                            </tr>
+                           
                         </tbody>
                     </table>
                 </div>
                </div>
-               <div class="add-score col-5">
-                <form id="form form-control-lg">
+               <div class="add-score col-sm-12 col-lg-6">
+                <form class="form form-control-lg">
+                    <h2 class="text-center">Add your score</h2>
                     <ul class="form-group">
-                        <h2>Add your score</h2>
+                        
                         <li>
-                            <label for="name">Name:</label>
-                            <input class="form-control" type="text" id="name" name="user_name" placeholder="Your name">
+                            <input class="form-control mb-2" type="text" id="name" name="user_name" placeholder="Your name">
                         </li>
                         <li>
-                            <label for="score">Score:</label>
-                            <input  class="form-control" type="number" id="score" name="user_score" placeholder="Your score" min="0" max="9999">
+                            <input  class="form-control mb-2" type="number" id="score" name="user_score" placeholder="Your score" min="0" max="9999">
                         </li>
                         <li class="d-flex justify-content-end py-5">
                             <button type="submit" class="submit btn btn-outline-secondary">Submit</button>
