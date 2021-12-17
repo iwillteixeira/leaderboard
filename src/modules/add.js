@@ -1,9 +1,11 @@
 import Store from './store.js';
+import RenderHtml from './render.js';
 
 export default class Additem {
   constructor() {
     this.store = new Store();
     this.button = document.querySelector('form button');
+    this.render = new RenderHtml();
   }
 
   addItem = () => {
@@ -21,6 +23,7 @@ export default class Additem {
     this.button.addEventListener('click', (e) => {
       e.preventDefault();
       this.addItem();
+      this.render.showItems();
     });
   }
 }

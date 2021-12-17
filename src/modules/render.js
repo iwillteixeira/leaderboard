@@ -1,4 +1,4 @@
-import Store from './store';
+import Store from './store.js';
 
 export default class RenderHtml {
   constructor() {
@@ -9,14 +9,18 @@ export default class RenderHtml {
     showItems = async () => {
       this.data = await this.store.getData()
         .then(
-          this.wrapItems.innerHTML = `<div class="spinner-grow position-absolute" role="status">
-                <span class="visually-hidden">Loading...</span>
+          this.wrapItems.innerHTML = `<div class="spinner-grow d-flex loading" role="status">
+                <span class="">Loading...</span>
               </div>`,
 
         );
       this.wrapItems.innerHTML = '';
       this.data.forEach((element) => {
-        console.log(element);
+        this.wrapItems.insertAdjacentHTML('beforeend',
+          `<tr>
+            <td>${element.user}</td>
+            <td>${element.score}</td>
+            </tr>`);
       });
     }
 }

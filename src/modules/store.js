@@ -41,9 +41,8 @@ export default class Store {
           },
         );
         const scores = await this.data.json();
-        console.log(scores.result);
         // put the scores in order
-        return scores.result;
+        return scores.result.sort((a, b) => b.score - a.score);
       } catch {
         throw this.err;
       }
