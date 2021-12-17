@@ -2,7 +2,7 @@
 
 # Leaderboard Project
 
-
+![screenshot](./screenshot.png)
 ## Built With
 
 - WEBPACK
@@ -11,6 +11,9 @@
 - JS
 - Bootstrap 5
 
+## Live Demo
+
+- [Live Demo](https://iwillteixeira.github.io/leaderboard/)
 
 ## Getting Started
 
@@ -21,9 +24,9 @@ To get a local copy up and running follow these simple example steps.
 
 To contribute with this project you must instal the follow items:
 
--NODE
--NPM
--SASS
+- NODE
+- NPM
+- SASS
 
 ### Setup
 
@@ -36,8 +39,8 @@ Install the packages globally and after that:
 
 ### Run tests
 
-- `npm run fixlinters`  fix and look up for errors
-- `npm run test` jest test
+- `npm run fixlinters`  (fix and look up for errors: eslint, stylelint and hint)
+- `npm run test` (jest test)
 
 ## Authors
 
